@@ -18,9 +18,8 @@ public class getFromPool : MonoBehaviour
         while (true)
         {
             var obj = pipepool.GetObjects();
-            //obj.transform.position += Vector3.up * Random.Range(minHeight, maxHeight);
             obj.transform.position = Vector3.up * 
-                Random.RandomRange(minHeight, maxHeight);
+                Random.Range(minHeight, maxHeight);
 
             yield return new WaitForSeconds(spawnInterval);
         }

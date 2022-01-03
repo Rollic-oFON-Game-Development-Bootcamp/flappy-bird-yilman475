@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class PipePool : MonoBehaviour
 {
@@ -9,7 +8,7 @@ public class PipePool : MonoBehaviour
 
     [SerializeField] private GameObject pipePrefab;
     [SerializeField] private int poolSize;
-    
+
 
     private void Awake()
     {
@@ -31,7 +30,5 @@ public class PipePool : MonoBehaviour
         pooledPipes.Enqueue(obj);
 
         return obj;
-
     }
-
 }

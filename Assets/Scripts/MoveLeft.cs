@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
-
-    [SerializeField] private float speed = 1.5f;
+    [SerializeField] private float speed = 1.2f;
 
     void Update()
     {
